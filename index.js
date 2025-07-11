@@ -1,14 +1,7 @@
-document.getElementById("main-heading").textContent = "Fruit World";
+const fruits = document.getElementsByClassName('fruit');
 
-document.getElementById("main-heading").style.color = "orange";
-   
-document.getElementById("header").style.backgroundColor = "green";
+fruits[2].style.backgroundColor = 'yellow';
 
-document.getElementById("header").style.borderBottom = "2px solid orange";
-
-document.getElementById("basket-heading").style.color = "green";
-
-const p = document.createElement("p");
-p.textContent = "Please visit us again";
-document.getElementById("thanks").appendChild(p);
-
+for (let i = 0; i < fruits.length; i++) {
+  fruits[i].style.fontWeight = 'bold';
+}
